@@ -1,0 +1,18 @@
+# backups, old versions
+_old/
+*_20*
+*.bak
+*.old
+
+# logs and runtime
+*.log
+logs/
+run/
+tmp/
+*.pid
+
+# secrets
+*.env
+secrets.*
+id_rsa*
+*.pem
