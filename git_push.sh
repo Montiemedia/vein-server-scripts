@@ -14,7 +14,7 @@ REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$REPO_DIR"
 
 # Pre-Commit Secret Check
-./precommit_secrets_check.sh || exit 1
+./git_precommit_secrets_check.sh || exit 1
 
 
 echo "==============================="
