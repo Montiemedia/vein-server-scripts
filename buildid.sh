@@ -2,23 +2,19 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: buildid.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Prints build id (if used).
+#   Prints the current VEIN server build identifier/version as seen by the local installation.
 #
 # Called by:
-#   Manual admin use or update.sh
+#   menu.sh, troubleshooting workflows
 #
 # Outputs:
-#   Build information
+#   Writes build/version info to stdout.
 #
 # Return codes:
-#   0 on success.
-#
-# Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   0 = success
+#   1+ = error
 # ==============================================================================
 
 set -Eeuo pipefail
