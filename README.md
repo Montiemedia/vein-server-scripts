@@ -24,7 +24,7 @@ Lightweight Bash tooling for administering a VEIN dedicated server.
 | git_push.sh | Git commit & push |
 | git_pull.sh | Git pull |
 | git_status.sh | Git repository status |
-| precommit_secrets_check.sh | Secret scan before commit |
+| git_precommit_secrets_check.sh | Secret scan before commit |
 
 ## Usage
 ```bash
