@@ -2,24 +2,24 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: backup_core.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Creates a backup archive of Saved and relevant config. Optionally stops and restarts for consistency.
+#   Core backup implementation. Collects relevant VEIN server data and writes a tar.gz backup.
 #
 # Called by:
-#   backup.sh, stop.sh (safety backup), timed backups
+#   backup.sh, automation jobs (if configured)
 #
 # Outputs:
-#   A tar.gz in /opt/games/vein/backups with name vein_YYYYMMDD_HHMMSS.tar.gz
+#   Creates a tar.gz archive in /opt/games/vein/backups
 #
 # Return codes:
-#   0 on success, non-zero on error.
+#   0 = success
+#   1+ = error
 #
 # Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   Keep this script non-interactive. Validate paths and permissions in your environment.
 # ==============================================================================
+
 
 set -euo pipefail
 
