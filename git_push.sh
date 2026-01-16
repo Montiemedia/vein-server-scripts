@@ -1,8 +1,11 @@
-#!/bin/bash
-
-# Simple Git Push Script for VEIN scripts
-# Location: /opt/games/vein/scripts
-# Author: Montiemedia
+#!/usr/bin/env bash
+# ==============================================================================
+# Git Helper Script
+# File: git_push.sh
+#
+# Purpose:
+#   Adds changes, creates a commit message interactively, runs secret scan, and pushes to origin.
+# ==============================================================================
 
 set -e
 
