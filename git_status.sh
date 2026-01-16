@@ -1,7 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# ==============================================================================
+# Git Helper Script
+# File: git_status.sh
+#
+# Purpose:
+#   Shows repository path, remote, current branch, last commit, and whether the working tree is clean.
+# ==============================================================================
 
-# Git Status Script for VEIN scripts
-# Author: Montiemedia
 
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$REPO_DIR" || exit 1
