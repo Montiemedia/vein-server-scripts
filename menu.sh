@@ -2,23 +2,22 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: menu.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   CLI menu wrapper (legacy).
+#   Interactive administration menu for common VEIN server operations.
 #
 # Called by:
-#   Manual admin use
+#   Operators (manual usage)
 #
-# Outputs:
-#   Menu prompts
+# Actions:
+#   Starts/stops/restarts server, triggers updates, backups/restores, shows status/logs/build info.
 #
 # Return codes:
-#   0 on success.
+#   0 = normal exit
+#   1+ = error
 #
 # Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   This script is interactive by design. Most other scripts should remain non-interactive.
 # ==============================================================================
 
 set -Eeuo pipefail
