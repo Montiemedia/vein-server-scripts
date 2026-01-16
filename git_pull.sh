@@ -1,7 +1,11 @@
-#!/bin/bash
-
-# Simple Git Pull Script for VEIN scripts
-# Author: Montiemedia
+#!/usr/bin/env bash
+# ==============================================================================
+# Git Helper Script
+# File: git_pull.sh
+#
+# Purpose:
+#   Fetches and pulls the latest changes from origin for the current branch (fast-forward only).
+# ==============================================================================
 
 set -e
 
