@@ -1,4 +1,22 @@
 #!/usr/bin/env bash
+# ==============================================================================
+# VEIN Dedicated Server Script
+# File: lastbackup.sh
+#
+# Purpose:
+#   Shows the most recent backup artifact and basic metadata (timestamp/size), if present.
+#
+# Called by:
+#   menu.sh, operators
+#
+# Outputs:
+#   Prints last backup information to stdout.
+#
+# Return codes:
+#   0 = success
+#   1+ = error
+# ==============================================================================
+
 
 set -euo pipefail
 
