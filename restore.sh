@@ -1,25 +1,28 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: restore.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Restores a backup into a separate restore directory for manual copy-back (safe restore workflow).
+#   Restores VEIN server data from a selected backup archive.
 #
 # Called by:
-#   Manual admin use
+#   menu.sh, operators, Cockpit VEIN Panel (if wired)
+#
+# Inputs:
+#   A backup tar.gz from /opt/games/vein/backups
 #
 # Outputs:
-#   Extracted files under /opt/games/vein/_restore_test
+#   Restored server data in the configured VEIN data directories.
 #
 # Return codes:
-#   0 on success, non-zero on error.
+#   0 = success
+#   1+ = error
 #
 # Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   Restore is a destructive operation. Keep logic non-interactive unless explicitly intended.
 # ==============================================================================
+
 
 set -Eeuo pipefail
 source /opt/games/vein/game.conf
