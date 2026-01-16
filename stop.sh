@@ -2,23 +2,19 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: stop.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Stops the VEIN server process gracefully, waits for exit, then makes a safety backup.
+#   Stops the VEIN dedicated server process gracefully (or forcefully if required).
 #
 # Called by:
-#   veinctl stop, restart.sh, backup_core.sh (when it needs a consistent backup), Cockpit VEIN Panel
+#   menu.sh, Cockpit VEIN Panel, operators
 #
 # Outputs:
-#   Console messages and a backup archive in /opt/games/vein/backups
+#   Writes progress and result to stdout.
 #
 # Return codes:
-#   0 on success, non-zero on error.
-#
-# Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   0 = success
+#   1+ = error
 # ==============================================================================
 
 set -Eeuo pipefail
