@@ -2,23 +2,22 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: update.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Updates the game server (SteamCMD).
+#   Updates the VEIN dedicated server installation (e.g., SteamCMD/app update workflow).
 #
 # Called by:
-#   Manual admin use
+#   menu.sh, operators, maintenance routines
 #
 # Outputs:
-#   Update logs
+#   Writes update progress to stdout and updates local installation files.
 #
 # Return codes:
-#   0 on success.
+#   0 = success
+#   1+ = error
 #
 # Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   Keep non-interactive if called by panels/automation.
 # ==============================================================================
 
 set -Eeuo pipefail
