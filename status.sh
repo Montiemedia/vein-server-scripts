@@ -2,23 +2,19 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: status.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Checks whether the server is running and prints uptime seconds and start timestamp.
+#   Shows current VEIN server status (process state, basic health info).
 #
 # Called by:
-#   veinctl status, Cockpit VEIN Panel auto-refresh
+#   menu.sh, operators, monitoring checks
 #
 # Outputs:
-#   If running: "<seconds>|<start time>"; if not running: exits with code 3
+#   Prints status information to stdout.
 #
 # Return codes:
-#   0 if running, 3 if not running, other on error.
-#
-# Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   0 = running/ok (depending on implementation)
+#   1+ = not running/error
 # ==============================================================================
 
 set -euo pipefail
