@@ -39,3 +39,4 @@ must be provided externally and are not part of this codebase.
 
 Use at your own risk. Adapt paths and permissions to your environment.
 
+This repository reflects a real-world production setup and is intentionally kept simple.
