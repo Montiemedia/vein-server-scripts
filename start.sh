@@ -2,23 +2,22 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: start.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Starts the VEIN server process and writes the PID and logfile path.
+#   Starts the VEIN dedicated server process.
 #
 # Called by:
-#   veinctl start, restart.sh, backup_core.sh (after backup), Cockpit VEIN Panel
+#   menu.sh, Cockpit VEIN Panel, operators
 #
 # Outputs:
-#   Console messages, /opt/games/vein/run/server.pid, /opt/games/vein/run/server.log
+#   Starts server and writes basic status/progress to stdout.
 #
 # Return codes:
-#   0 on success, non-zero on error.
+#   0 = success
+#   1+ = error
 #
 # Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   Designed for non-interactive execution when called by panels/automation.
 # ==============================================================================
 
 set -Eeuo pipefail
