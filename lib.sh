@@ -1,4 +1,18 @@
 #!/usr/bin/env bash
+# ==============================================================================
+# VEIN Dedicated Server Script Library
+# File: lib.sh
+#
+# Purpose:
+#   Shared helper functions and common variables used across VEIN admin scripts.
+#
+# Used by:
+#   start.sh, stop.sh, restart.sh, update.sh, backup/restore scripts, menu.sh, etc.
+#
+# Notes:
+#   Keep functions stable and backward compatible. Avoid interactive prompts in library code.
+# ==============================================================================
+
 set -Eeuo pipefail
 
 CONF="/opt/games/vein/game.conf"
