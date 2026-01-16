@@ -1,7 +1,24 @@
-#!/bin/bash
-
-# Pre-Commit Secret Scan for VEIN scripts
-# Author: Montiemedia
+#!/usr/bin/env bash
+# ==============================================================================
+# Git Helper Script
+# File: git_precommit_secrets_check.sh
+#
+# Purpose:
+#   Scans staged and untracked files for common secret patterns before committing.
+#
+# Scope:
+#   Intended to prevent accidental commits of credentials, tokens or private keys.
+#
+# Usage:
+#   Can be executed manually or called by git_push.sh prior to commit/push.
+#
+# Outputs:
+#   Prints findings to stdout. Exits non-zero on detected patterns.
+#
+# Return codes:
+#   0 = no secrets detected
+#   1 = potential secret patterns found
+# ==============================================================================
 
 set -e
 
