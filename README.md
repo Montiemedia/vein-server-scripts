@@ -1,12 +1,19 @@
 # VEIN Server Scripts
 
-Bash-Toolbox für Administration des VEIN Dedicated Servers:
-Start, Stop, Restart, Update, Backup, Restore, Status, Logs, Menü.
+Lightweight Bash tooling for administering a VEIN dedicated server.
 
-Hinweise:
-- Keine Secrets ins Repo committen.
-- Alte Versionen liegen lokal in `_old/` oder als `*_YYYYMMDD`.
-- Für produktive Nutzung Rechte und Pfade prüfen.
+## Features
+- Start / stop / restart server
+- Update and setup helpers
+- Backup and restore
+- Status, logs and uptime
+- Git helper scripts (push, pull, status, secret check)
+
+## Usage
+```bash
+cd scripts
+./menu.sh
+
 
 ## Security Notice
 
