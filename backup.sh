@@ -2,24 +2,24 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: backup.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Manual backup entrypoint for the panel. Uses backup_core.sh with minimal side-effects.
+#   Manual backup entrypoint. Delegates to backup_core.sh with minimal side effects.
 #
 # Called by:
 #   veinctl backup, Cockpit VEIN Panel
 #
 # Outputs:
-#   A tar.gz in /opt/games/vein/backups
+#   Creates a tar.gz archive in /opt/games/vein/backups
 #
 # Return codes:
-#   0 on success, non-zero on error.
+#   0 = success
+#   1+ = error
 #
 # Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   Designed for non-interactive execution. Avoid prompts unless panel logic is updated.
 # ==============================================================================
+
 
 set -Eeuo pipefail
 
