@@ -1,16 +1,20 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# VEIN Dedicated Server Script Library
-# File: lib.sh
+# VEIN Dedicated Server Script
+# File: logs.sh
 #
 # Purpose:
-#   Shared helper functions and common variables used across VEIN admin scripts.
+#   Displays recent server logs / relevant log output for operational troubleshooting.
 #
-# Used by:
-#   start.sh, stop.sh, restart.sh, update.sh, backup/restore scripts, menu.sh, etc.
+# Called by:
+#   menu.sh, operators
 #
-# Notes:
-#   Keep functions stable and backward compatible. Avoid interactive prompts in library code.
+# Outputs:
+#   Prints log lines to stdout.
+#
+# Return codes:
+#   0 = success
+#   1+ = error
 # ==============================================================================
 
 set -Eeuo pipefail
