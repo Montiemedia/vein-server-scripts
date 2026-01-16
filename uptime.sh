@@ -2,23 +2,19 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: uptime.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Prints server uptime seconds (simple helper).
+#   Displays how long the VEIN dedicated server has been running.
 #
 # Called by:
-#   status.sh or manual debugging
+#   menu.sh, operators
 #
 # Outputs:
-#   Seconds as integer, or exits 3 if not running
+#   Prints uptime information to stdout.
 #
 # Return codes:
-#   0 if running, 3 if not running.
-#
-# Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   0 = success
+#   1+ = error
 # ==============================================================================
 
 set -euo pipefail
