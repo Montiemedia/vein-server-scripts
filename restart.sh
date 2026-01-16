@@ -2,24 +2,21 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: restart.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Stops then starts the server (wrapper around stop.sh and start.sh).
+#   Restarts the VEIN dedicated server (stop then start).
 #
 # Called by:
-#   veinctl restart, Cockpit VEIN Panel
+#   menu.sh, operators, Cockpit panel (if wired)
 #
 # Outputs:
-#   Console messages
+#   Writes progress and status information to stdout.
 #
 # Return codes:
-#   0 on success, non-zero on error.
-#
-# Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   0 = success
+#   1+ = error
 # ==============================================================================
+
 
 set -Eeuo pipefail
 /opt/games/vein/scripts/stop.sh || true
