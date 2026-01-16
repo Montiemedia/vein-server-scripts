@@ -2,24 +2,21 @@
 # ==============================================================================
 # VEIN Dedicated Server Script
 # File: setup.sh
-# Updated: 2025-12-26
 #
 # Purpose:
-#   Initial setup helper for directories, permissions and sudoers.
+#   Prepares the VEIN dedicated server environment: directories, permissions, prerequisites.
 #
 # Called by:
-#   Manual admin use (one-time)
+#   Operators during initial deployment, menu.sh
 #
 # Outputs:
-#   Creates dirs and config
+#   Creates/validates required folders and baseline configuration.
 #
 # Return codes:
-#   0 on success.
-#
-# Notes:
-#   - These scripts are designed to be called non-interactively (Cockpit panel).
-#   - Do not add prompts (read/echo y/n) unless you also update the panel logic.
+#   0 = success
+#   1+ = error
 # ==============================================================================
+
 
 set -Eeuo pipefail
 
