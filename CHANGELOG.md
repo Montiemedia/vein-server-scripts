@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
+The format is based on Keep a Changelog and this project follows Semantic Versioning.
+
 ## [Unreleased]
 
 ### Added
@@ -16,12 +18,29 @@ All notable changes to this project will be documented in this file.
 ## [1.0.0] - 2026-01-20
 
 ### Added
-- Initial public release of VEIN Server Scripts
-- Core Bash scripts for VEIN admin:
-  - start.sh, stop.sh, restart.sh
-  - update.sh, backup.sh, restore.sh
-  - status.sh, uptime.sh, logs.sh
-  - menu.sh (interactive menu)
-  - git helper scripts: git_push.sh, git_pull.sh, git_status.sh, git_precommit_secrets_check.sh
-- Installation guides (INSTALL.md / INSTALL.de.md)
-- Community & contribution files
+- Public initial release of VEIN Server Scripts
+- Core Bash scripts for VEIN administration:
+  - start.sh – Start VEIN server
+  - stop.sh – Stop VEIN server
+  - restart.sh – Restart VEIN server
+  - update.sh – Update server scripts
+  - backup.sh – Create backup
+  - restore.sh – Restore backup
+  - status.sh – Check server status
+  - uptime.sh – Show server uptime
+  - logs.sh – View server logs
+  - menu.sh – Interactive script menu
+- Git helper scripts:
+  - git_push.sh – Git commit & push
+  - git_pull.sh – Git pull
+  - git_status.sh – Git repository status
+  - git_precommit_secrets_check.sh – Pre-commit secret scan
+- Installation guides included:
+  - INSTALL.md – English installation instructions
+  - INSTALL.de.md – German installation instructions
+- Community & contribution files:
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - SECURITY.md
+  - Issue templates
+  - Pull request template
