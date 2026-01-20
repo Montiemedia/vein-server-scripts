@@ -31,6 +31,8 @@ git clone https://github.com/Montiemedia/vein-server-scripts.git
 cd vein-server-scripts
 chmod +x *.sh
 ./menu.sh
+```
+
 
 | Script                           | Purpose                |
 | -------------------------------- | ---------------------- |
@@ -48,7 +50,7 @@ chmod +x *.sh
 | `git_pull.sh`                    | Git pull               |
 | `git_status.sh`                  | Git repository status  |
 | `git_precommit_secrets_check.sh` | Pre-commit secret scan |
-
+| -------------------------------- | ---------------------- |
 
 Installation
 
