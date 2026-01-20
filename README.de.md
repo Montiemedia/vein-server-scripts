@@ -1,54 +1,102 @@
-# VEIN Server Skripte
+# VEIN Server Scripts
+
 ![Shell](https://img.shields.io/badge/language-shell-000000)
 ![License](https://img.shields.io/badge/license-MIT-000000)
+![Release](https://img.shields.io/github/v/release/Montiemedia/vein-server-scripts)
 ![Issues](https://img.shields.io/github/issues/Montiemedia/vein-server-scripts)
 ![Stars](https://img.shields.io/github/stars/Montiemedia/vein-server-scripts)
 
-Dieses Repository enthält eine Sammlung von Bash-Skripten zur Administration
-eines **VEIN Dedicated Servers** unter Linux.
+Leichtgewichtige Bash-Tools zur Verwaltung eines VEIN Dedicated Servers  
+(Start, Stopp, Update, Backup, Restore, Status).
 
-Die Skripte sind für den praktischen Serverbetrieb gedacht und decken typische
-Wartungs- und Verwaltungsaufgaben ab.
+---
+
+## Dokumentation
+
+- 📄 [README (Englisch)](README.md)  
+- 🇩🇪 [README (Deutsch)](README.de.md)  
+- ⚙️ [Installationsanleitung (EN)](INSTALL.md)  
+- ⚙️ [Installationsanleitung (DE)](INSTALL.de.md)  
+- 🔐 [Sicherheitsrichtlinie](SECURITY.md)  
+- 🤝 [Beitragsrichtlinien](CONTRIBUTING.md)  
+- 📜 [Lizenz](LICENSE)  
+- 📝 [Changelog](CHANGELOG.md)  
+- 🚀 [Releases](https://github.com/Montiemedia/vein-server-scripts/releases)
+
+---
 
 ## Funktionen
-- Starten, Stoppen und Neustarten des VEIN Servers
-- Update- und Setup-Hilfsskripte
-- Backup- und Restore-Funktionen
-- Status-, Log- und Uptime-Abfragen
-- Git-Hilfsskripte für Versionierung und Pflege
 
-## Skripte
+- Server starten, stoppen und neu starten  
+- Update-Hilfen  
+- Backup und Wiederherstellung  
+- Status, Logs und Uptime  
+- Interaktives Menü  
+- Git-Hilfsskripte (Push, Pull, Status, Pre-Commit-Secret-Check)  
 
-| Skript | Zweck |
-|------|------|
-| start.sh | Startet den VEIN Server |
-| stop.sh | Stoppt den VEIN Server |
-| restart.sh | Startet den Server neu |
-| update.sh | Aktualisiert den Server |
-| setup.sh | Initiales Setup / Vorbereitung |
-| backup.sh | Erstellt ein Backup |
-| restore.sh | Stellt ein Backup wieder her |
-| status.sh | Zeigt Serverstatus |
-| logs.sh | Zeigt Log-Ausgaben |
-| uptime.sh | Zeigt Laufzeit |
-| menu.sh | Interaktives Administrationsmenü |
-| git_push.sh | Git Commit & Push |
-| git_pull.sh | Git Pull |
-| git_status.sh | Git Repository Status |
-| precommit_secrets_check.sh | Prüfung auf Secrets vor Commits |
+---
 
-## Nutzung
+## Schnellstart
+
 ```bash
-cd scripts
+git clone https://github.com/Montiemedia/vein-server-scripts.git
+cd vein-server-scripts
+chmod +x *.sh
 ./menu.sh
+```
 
-## Sicherheitshinweis
+## Skript-Übersicht
+| Skript                           | Zweck                        |
+| -------------------------------- | ---------------------------- |
+| `menu.sh`                        | Interaktives Menü            |
+| `start.sh`                       | VEIN-Server starten          |
+| `stop.sh`                        | VEIN-Server stoppen          |
+| `restart.sh`                     | VEIN-Server neu starten      |
+| `update.sh`                      | Server-Skripte aktualisieren |
+| `backup.sh`                      | Backup erstellen             |
+| `restore.sh`                     | Backup wiederherstellen      |
+| `status.sh`                      | Serverstatus prüfen          |
+| `uptime.sh`                      | Serverlaufzeit anzeigen      |
+| `logs.sh`                        | Server-Logs anzeigen         |
+| `git_push.sh`                    | Git Commit & Push            |
+| `git_pull.sh`                    | Git Pull                     |
+| `git_status.sh`                  | Git-Repository-Status        |
+| `git_precommit_secrets_check.sh` | Pre-Commit-Secret-Scan       |
 
-Dieses Repository enthält bewusst keine Zugangsdaten oder Secrets.
+---
 
-Alle Konfigurationswerte, Zugangsdaten, Tokens oder umgebungsspezifischen
-Parameter müssen extern bereitgestellt werden und sind nicht Teil dieses
-Repos.
+## Installation
 
-Die Nutzung erfolgt auf eigene Verantwortung.
-Pfadnamen, Benutzerrechte und Umgebung müssen an das jeweilige System angepasst werden.
+- Englisch: [INSTALL.md](INSTALL.md)  
+- Deutsch: [INSTALL.de.md](INSTALL.de.md)
+
+---
+
+## Konfiguration
+
+Dieses Repository enthält bewusst **keine Zugangsdaten oder Geheimnisse**.  
+Alle Konfigurationswerte, Zugangsdaten, Tokens oder umgebungsspezifischen Einstellungen müssen extern bereitgestellt werden.
+
+Nutzung auf eigene Verantwortung.  
+Passe Pfade und Berechtigungen an deine Umgebung an.
+
+---
+
+## Sicherheit
+
+Siehe [SECURITY.md](SECURITY.md)
+
+---
+
+## Mitwirken
+
+Siehe [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
+## Lizenz
+
+MIT-Lizenz  
+Siehe [LICENSE](LICENSE)
+
+
