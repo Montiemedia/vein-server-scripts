@@ -30,10 +30,14 @@ Lightweight Bash tooling for administering a VEIN dedicated server.
 | git_status.sh | Git repository status |
 | git_precommit_secrets_check.sh | Secret scan before commit |
 
-## Usage
+## Quickstart
+
 ```bash
-cd scripts
+git clone https://github.com/Montiemedia/vein-server-scripts.git
+cd vein-server-scripts
+chmod +x *.sh
 ./menu.sh
+
 
 ## Security Notice
 
