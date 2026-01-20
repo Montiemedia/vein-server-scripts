@@ -50,31 +50,41 @@ chmod +x *.sh
 | `git_pull.sh`                    | Git pull               |
 | `git_status.sh`                  | Git repository status  |
 | `git_precommit_secrets_check.sh` | Pre-commit secret scan |
-| -------------------------------- | ---------------------- |
 
-Installation
 
-English: INSTALL.md
+---
 
-German: INSTALL.de.md
+## Installation
 
-Configuration
+- English: [INSTALL.md](INSTALL.md)  
+- German: [INSTALL.de.md](INSTALL.de.md)
 
-This repository intentionally contains no secrets.
+---
+
+## Configuration
+
+This repository intentionally contains no secrets.  
 All configuration values, credentials, tokens or environment-specific settings must be provided externally.
 
-Use at your own risk.
+Use at your own risk.  
 Adapt paths and permissions to your environment.
 
-Security
+---
 
-See SECURITY.md
+## Security
 
-Contributing
+See [SECURITY.md](SECURITY.md)
 
-See CONTRIBUTING.md
+---
 
-License
+## Contributing
 
-MIT License
-See LICENSE
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
+## License
+
+MIT License  
+See [LICENSE](LICENSE)
+
