@@ -2,8 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on Keep a Changelog, and this project follows Semantic Versioning.
-
 ## [Unreleased]
 
 ### Added
@@ -18,9 +16,12 @@ The format is based on Keep a Changelog, and this project follows Semantic Versi
 ## [1.0.0] - 2026-01-20
 
 ### Added
-- Initial public release
-- Core admin scripts (start, stop, restart, update, backup, restore, status)
-- Interactive menu (`menu.sh`)
-- Git helper scripts (push, pull, status, pre-commit secret check)
-- Documentation (README, install notes)
-
+- Initial public release of VEIN Server Scripts
+- Core Bash scripts for VEIN admin:
+  - start.sh, stop.sh, restart.sh
+  - update.sh, backup.sh, restore.sh
+  - status.sh, uptime.sh, logs.sh
+  - menu.sh (interactive menu)
+  - git helper scripts: git_push.sh, git_pull.sh, git_status.sh, git_precommit_secrets_check.sh
+- Installation guides (INSTALL.md / INSTALL.de.md)
+- Community & contribution files
