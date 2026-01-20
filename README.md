@@ -1,6 +1,10 @@
 👉 Deutsche Version: [README.de.md](README.de.md)
 
 # VEIN Server Scripts
+![Shell](https://img.shields.io/badge/language-shell-000000)
+![License](https://img.shields.io/badge/license-MIT-000000)
+![Issues](https://img.shields.io/github/issues/Montiemedia/vein-server-scripts)
+![Stars](https://img.shields.io/github/stars/Montiemedia/vein-server-scripts)
 
 Lightweight Bash tooling for administering a VEIN dedicated server.
 
