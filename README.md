@@ -9,7 +9,17 @@
 Lightweight Bash tooling for administering a VEIN dedicated server  
 (start, stop, update, backup, restore, status).
 
-Deutsch: siehe [README.de.md](README.de.md)
+## Documentation
+
+- 📄 [README (English)](README.md)  
+- 🇩🇪 [README (Deutsch)](README.de.md)  
+- ⚙️ [Installation Guide (EN)](INSTALL.md)  
+- ⚙️ [Installationsanleitung (DE)](INSTALL.de.md)  
+- 🔐 [Security Policy](SECURITY.md)  
+- 🤝 [Contributing Guidelines](CONTRIBUTING.md)  
+- 📜 [License](LICENSE)  
+- 📝 [Changelog](CHANGELOG.md)  
+- 🚀 [Releases](https://github.com/Montiemedia/vein-server-scripts/releases)
 
 ---
 
@@ -33,6 +43,7 @@ chmod +x *.sh
 ./menu.sh
 ```
 
+## Script Overview
 
 | Script                           | Purpose                |
 | -------------------------------- | ---------------------- |
