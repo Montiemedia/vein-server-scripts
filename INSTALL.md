@@ -36,7 +36,7 @@ Example layout:
 ├── data/           # VEIN runtime / save data
 ├── backups/        # backup archives (created by backup.sh)
 
-````
+```
 
 Adjust paths inside the scripts if your setup differs.
 
@@ -49,7 +49,7 @@ Adjust paths inside the scripts if your setup differs.
 ```bash
 cd /opt/games/vein
 git clone https://github.com/Montiemedia/vein-server-scripts.git scripts
-````
+```
 
 Alternatively, clone to a different location and adapt paths accordingly.
 
@@ -164,5 +164,4 @@ They reflect a real-world production setup but may not match your environment.
 
 Always review scripts before execution.
 Use at your own risk.
-
 
