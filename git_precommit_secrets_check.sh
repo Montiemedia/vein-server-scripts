@@ -39,11 +39,11 @@ while IFS= read -r f; do
 
   # Dateien ignorieren, die zwangsläufig das Pattern enthalten
   case "$f" in
-    precommit_secrets_check.sh|git_push.sh) continue ;;
+    git_precommit_secrets_check.sh|git_push.sh) continue ;;
   esac
 
   # Treffer suchen, aber Zeilen ignorieren, die nur Script-Namen enthalten
-  MATCHES="$(grep -nI -E "$PATTERN" "$f" | grep -vE "precommit_secrets_check\.sh|git_push\.sh" || true)"
+  MATCHES="$(grep -nI -E "$PATTERN" "$f" | grep -vE "git_precommit_secrets_check\.sh|git_push\.sh" || true)"
   if [ -n "$MATCHES" ]; then
     echo
     echo "❌ Treffer in: $f"

@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 # ==============================================================================
 # VEIN Dedicated Server Script
-# File: logs.sh
+# File: lib.sh
 #
 # Purpose:
-#   Displays recent server logs / relevant log output for operational troubleshooting.
+#   Shared helper functions and configuration loading for VEIN server scripts.
 #
 # Called by:
-#   menu.sh, operators
+#   start.sh, stop.sh, update.sh, logs.sh, buildid.sh, etc.
 #
 # Outputs:
-#   Prints log lines to stdout.
+#   None directly; provides shared functions.
 #
 # Return codes:
 #   0 = success
