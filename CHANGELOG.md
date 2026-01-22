@@ -15,6 +15,18 @@ The format is based on Keep a Changelog and this project follows Semantic Versio
 ### Fixed
 - 
 
+## [1.0.1] - 2026-01-22
+
+### Added
+- Regression test for the pre-commit secret scan.
+
+### Changed
+- Clarified lib.sh header documentation.
+
+### Fixed
+- Corrected Markdown code fences in INSTALL.md.
+- Updated secret scan ignore patterns to match the helper script filename.
+
 ## [1.0.0] - 2026-01-20
 
 ### Added
